@@ -1,0 +1,43 @@
+{
+    // this key comes from the "databases" table.
+    "tst03dat": {
+        // populate the hosts from "databases" as well
+        "hosts": {
+            "mod10dap": {
+                // then mark db:host as dataguard if found in "Dataguard" table, true, otherwise it's false
+                "dataguard": false
+            },
+            "mod51dap": {
+                "dataguard": true
+            }
+        },
+        "backups": [
+            {
+                // attach the database backup records to this "backups" array
+                // by the DB name from the "backup events" table
+                "db_name": "msgptst",
+                "hostname": "tst03dat",
+                "backup_type": "ARCH",
+                "backup_node": "TST03DAT_MSGPTST_NTDPO",
+                "exit_code": "0",
+                "start_epoch": "2022-11-16 13:45:01",
+                "db_size_mb": "18.45 GiB",
+                "transferred_mb": "1.15 GiB",
+                "duration": "50",
+                "id": "{\"__name__\":\"oracle_backup\",\"backup_type\":\"ARCH\",\"db_name\":\"msgptst\",\"hostname\":\"tst03dat\",\"start_epoch\":\"1668624301\"}"
+            },
+            {
+                "db_name": "msgptst",
+                "hostname": "tst03dat",
+                "backup_type": "ARCH",
+                "backup_node": "TST03DAT_MSGPTST_NTDPO",
+                "exit_code": "0",
+                "start_epoch": "2022-11-16 14:45:01",
+                "db_size_mb": "18.45 GiB",
+                "transferred_mb": "1.15 GiB",
+                "duration": "50",
+                "id": "{\"__name__\":\"oracle_backup\",\"backup_type\":\"ARCH\",\"db_name\":\"msgptst\",\"hostname\":\"tst03dat\",\"start_epoch\":\"1668624301\"}"
+            }
+        ]
+    }
+}
