@@ -1,11 +1,12 @@
-# My Code Samples
+# Code and Other Snippets
 
 This is just where I am putting some stuff that his helpful for me.
 
+# Coding Languange Reference
 
-# Coding
 
-## TS and Javascript
+
+## Typescript/Javascript
 
 ## Go
 
